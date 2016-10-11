@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+			"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.server.BIDRMapper">
+	<insert id="insertBIDR" statementType="STATEMENT">
+		insert into
+		${tableName}(aaa_login_name,login_ip,login_date,logout_date,nas_ip,time_duration)
+		values('${bidr.AAA_login_name}','${bidr.login_ip}',to_date('${bidr.login_date}','yyyy-mm-dd hh24:mi:ss'),to_date('${bidr.logout_date}','yyyy-mm-dd hh24:mi:ss'),'${bidr.NAS_ip}',${bidr.time_deration})
+	</insert>
+</mapper>
+
+
